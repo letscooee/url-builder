@@ -27,6 +27,9 @@ urlBuilder.setPath('/save');
 urlBuilder.setQueryString('name=Jon&country=India');
 
 console.log(urlBuilder.toString() === 'https://example.com/save?name=Jon&country=India');
+
+urlBuilder.clearQueryParams();
+console.log(urlBuilder.toString() === 'https://example.com/save');
 ```
 
 ## Release

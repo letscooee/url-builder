@@ -21,6 +21,14 @@ export class URLBuilder {
         this.params.append(name, value ? value.toString() : '');
     }
 
+    /**
+     * Remove or clear the query part from the URL.
+     */
+    clearQueryParams(): URLBuilder {
+        this.params = new URLSearchParams();
+        return this;
+    }
+
     deleteQueryParam(name: string) {
         this.params.delete(name);
     }

@@ -10,6 +10,13 @@ describe('URL Builder Test', () => {
         expect(urlBuilder.getHostname()).to.equal('example.com');
     });
 
+    it('clearQueryParams should work fine', () => {
+        const urlBuilder = new URLBuilder('https://example.com/try?foo=bar&age=20');
+
+        urlBuilder.clearQueryParams();
+        expect(urlBuilder.toString()).to.equal('https://example.com/try');
+    });
+
     it('setQueryParam should work fine', () => {
         const urlBuilder = new URLBuilder('https://example.com/try?foo=bar&age=20');
 
