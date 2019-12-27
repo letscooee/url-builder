@@ -1,4 +1,5 @@
 {
+    "compileOnSave": false,
     "compilerOptions": {
         "module": "commonjs",
         "moduleResolution": "node",
@@ -8,7 +9,7 @@
         "noImplicitAny": false,
         "declaration": true,
         "strictNullChecks": false,
-        "sourceMap": false,
+        "sourceMap": true,
         "lib": [
             "dom",
             "es6",

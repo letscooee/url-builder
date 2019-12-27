@@ -2,8 +2,8 @@
     "name": "@wizpanda/url-builder",
     "version": "0.0.1",
     "description": "Utility class to provide some utility for dealing with URLs",
-    "main": "dist/url-builder.js",
-    "type": "dist/url-builder.d.ts",
+    "main": "./dist/url-builder.js",
+    "type": "./dist/url-builder.d.ts",
     "scripts": {
         "build": "tsc",
         "version": "npm run build && npm publish --access public",

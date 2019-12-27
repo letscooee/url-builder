@@ -70,6 +70,10 @@ export class URLBuilder {
         return this;
     }
 
+    /**
+     * Set the query string with a given new string. For example, <code>foo=bar&x=y&name=Jon</code>
+     * @param value
+     */
     setQueryString(value: string): URLBuilder {
         if (!value) {
             return;
