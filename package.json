@@ -1,0 +1,38 @@
+{
+    "name": "@wizpanda/url-builder",
+    "version": "0.0.1",
+    "description": "Utility class to provide some utility for dealing with URLs",
+    "main": "dist/url-builder.js",
+    "type": "dist/url-builder.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "version": "npm run build && npm publish --access public",
+        "postversion": "git push && git push --tags",
+        "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wizpanda/url-builder.git"
+    },
+    "keywords": [
+        "typescript",
+        "javascript",
+        "browser",
+        "angular",
+        "url"
+    ],
+    "author": "Shashank Agrawal",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wizpanda/url-builder/issues"
+    },
+    "homepage": "https://github.com/wizpanda/url-builder#readme",
+    "devDependencies": {
+        "@types/chai": "^4.2.7",
+        "@types/mocha": "^5.2.7",
+        "chai": "^4.2.0",
+        "mocha": "^6.2.2",
+        "ts-node": "^8.5.4",
+        "typescript": "^3.0.1"
+    }
+}
