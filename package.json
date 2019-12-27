@@ -6,6 +6,7 @@
     "type": "./dist/url-builder.d.ts",
     "scripts": {
         "build": "tsc",
+        "preversion": "git add CHANGELOG.md",
         "version": "npm run build && npm publish --access public",
         "postversion": "git push && git push --tags",
         "test": "mocha -r ts-node/register src/**/*.spec.ts"
