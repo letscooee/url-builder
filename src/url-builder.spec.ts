@@ -101,4 +101,19 @@ describe('URL Builder Test', () => {
         expect(urlBuilder.getQueryParam('age')).to.equal('20');
     });
 
+    it('should build the shopify url properly', () => {
+        const urlBuilder = new URLBuilder('https://example.myshopify.com');
+        urlBuilder.setPath('/admin/oauth/authorize');
+        urlBuilder.appendQueryParam('client_id', '12345');
+        urlBuilder.setQueryParam('scope', 'foo,bar');
+        urlBuilder.setQueryParam('scope', 'foo,bar1');
+        urlBuilder.setQueryParam('redirect_uri', 'https://www.letscooee.com');
+        urlBuilder.appendQueryParam('grant_options[]', 'xyz');
+
+        const expectedURL = 'https://example.myshopify.com/admin/oauth/authorize?client_id=12345&scope=foo%2Cbar1' +
+            '&redirect_uri=https%3A%2F%2Fwww.letscooee.com&grant_options%5B%5D=xyz';
+
+        expect(urlBuilder.toString()).to.equal(expectedURL);
+    });
+
 });
