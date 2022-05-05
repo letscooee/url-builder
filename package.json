@@ -1,6 +1,6 @@
 {
     "name": "@letscooee/url-builder",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Utility class to provide some utility for dealing with URLs",
     "main": "./dist/url-builder.js",
     "types": "./dist/url-builder.d.ts",
