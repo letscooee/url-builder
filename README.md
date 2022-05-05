@@ -1,20 +1,20 @@
 # URL Builder
 
-[![npm version](https://badge.fury.io/js/%40wizpanda%2Furl-builder.svg)](https://badge.fury.io/js/%40wizpanda%2Furl-builder)
-![](https://github.com/wizpanda/url-builder/workflows/Build%20And%20Test%20Cases/badge.svg)
+[![npm version](https://badge.fury.io/js/%40letscooee%2Furl-builder.svg)](https://badge.fury.io/js/%40letscooee%2Furl-builder)
+![](https://github.com/letscooee/url-builder/workflows/Build%20And%20Test%20Cases/badge.svg)
 
 A simple wrapper for TypeScript to build & parse a URL.
-  
+
 ## Installation
 
 ```shell script
-npm i @wizpanda/url-builder
+npm i @letscooee/url-builder
 ```
 
 ## Usage
 
 ```typescript
-import {URLBuilder} from '@wizpanda/url-builder';
+import {URLBuilder} from '@letscooee/url-builder';
 
 const urlBuilder = new URLBuilder('https://example.com/try?foo=bar&age=20');
 urlBuilder.setQueryParam('foo', 'bar-new');
