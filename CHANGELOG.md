@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.0.4
+
+1. Moving to a different namespace.
+
 ## v0.0.3
 
 1. Added `clearQueryParams()` method which clears the query.
